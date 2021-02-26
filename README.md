@@ -11,4 +11,4 @@ The program requires
 1. a "data tape", an ASCII character array which is initialized with the data to be processed and after termination, stores the result of the calculation.
 2. A "state table", a 2D character array. The specific program for the TM is encoded in the state table.
 
-The C code posted implements an odd/even checker, the C translation of the BASIC program TM1.BAS described in the article. For other machines, you can copy the data statement from the corresponding BASIC program, posted as a text file. The machines include integer divide, mod function, integer multiply and string copy.
+The C code posted implements an odd/even checker, the C translation of the BASIC program TM1.BAS described in the article. For other machines, you can copy the data statements and "tape" T$ from the corresponding BASIC program, posted as a text file. The machines include integer divide, mod function, integer multiply and string copy.
