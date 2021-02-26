@@ -1,5 +1,7 @@
-50 REM Turing Machine Simulator
-200 T$="@PPXXXXX%bbbbbbbbbbbbbbbbbbbb"
+50 REM Turing Machine Simulator, integer divide P string into X string (end by %) with remainder. 
+51 REM at finish, result tape contains P string (original divisor), Q string (remainder), T string (result)
+51 REM 
+200 T$="@PPPXXXXX%bbbbbbbbbbbbbbbbbbbb"
 210 S$="0"
 220 P=1 : REM starting pos
 400 PRINT T$
