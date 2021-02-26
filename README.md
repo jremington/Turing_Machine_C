@@ -2,7 +2,7 @@
 
 C program to emulate a Turing Machine. 
 
-I dug this up off an old disk inspired by an article in Byte magazine by Isaac Malitz (Byte 11/87 p 345, PDF article scan included). The article provided IBM Basic code for the simulator, along with a couple of TM examples. A couple of challenges were posed.
+I dug this up off an old disk; project inspired by an article by Isaac Malitz (Byte 11/87 p 345, PDF article scan included). The article provided IBM Basic code for the simulator, along with a couple of TM examples. A couple of challenges were posed.
 
 Read the article here: https://github.com/jremington/Turing_Machine_C/files/6052568/Turing_Byte_1987_11.pdf
 
