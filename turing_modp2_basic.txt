@@ -1,0 +1,27 @@
+50 REM Turing Machine Simulator
+200 T$="@PXXXX%bbbbbbbbbbbbbbbbbbbb"
+210 S$="0"
+220 P=1 : REM starting pos
+400 PRINT T$
+410 PRINT TAB(P);"^" :REM head
+420 IF S$="." THEN END
+499 REM state table lookup
+500 M$=S$+MID$(T$,P,1)
+510 RESTORE
+520 READ R$ : IF MID$(R$,1,2)<>M$ THEN 520
+600 PRINT S$,R$
+610 A$=INKEY$ : IF A$="" THEN 610
+799 REM rewrite symbol on tape
+800 MID$(T$,P,1)=MID$(R$,4,1)
+819 REM move left
+820 IF MID$(R$,6,1)="L" THEN P=P-1
+829 REM move right
+830 IF MID$(R$,6,1)="R" THEN P=P+1
+840 S$=MID$(R$,5,1) : REM new state
+900 GOTO 400
+1000 REM Find X mod P
+2000 DATA "0@-@0R","0P-P0R","0b-b0R","0%-%..","0X-b1L","0Q-Q0R"
+2010 DATA "1P-Q0R","1b-b1L","1@-@2R","1Q-Q1L"
+2020 DATA "2Q-P2R","2b-X0L"
+2030 DATA "3P-P3L","3Q-Q3L","3b-b3L","3@-@0R"
+Ok
