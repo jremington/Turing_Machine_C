@@ -2,14 +2,14 @@
 #include <string.h>
 #include <stdint.h>
 
-// Turing machine simulator, translation of TM1.BAS Isaac Malitz, Byte Nov 1989 p 345.
+// Turing machine simulator, translation of TM1.BAS Isaac Malitz, Byte Nov 1987 p 345.
 // S. J. Remington, long ago
 
 // The follow initialization statements implement the TM1.BAS "even/odd" checker from the above article
 // The program counts the number of X entries and reports whether the number is even or odd
 
 // data tape
-char tape[] = "XXXXbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"; //data and output tape for even/odd checker
+char tape[] = "XXXXXbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"; //data and output tape for even/odd checker
 char state = '0'; //machine state
 char mark = 0; //symbol read
 
