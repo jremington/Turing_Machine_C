@@ -1,0 +1,29 @@
+50 REM Turing Machine Simulator
+200 T$="XXYYXYYbbbbbbbbbbbbbbbbbbbbbb"
+210 S$="0"
+220 P=1 : REM starting pos
+400 PRINT T$
+410 PRINT TAB(P);"^" :REM head
+420 IF S$="." THEN END
+499 REM state table lookup
+500 M$=S$+MID$(T$,P,1)
+510 RESTORE
+520 READ R$ : IF MID$(R$,1,2)<>M$ THEN 520
+600 PRINT S$,R$
+610 A$=INKEY$ : IF A$="" THEN 610
+799 REM rewrite symbol on tape
+800 MID$(T$,P,1)=MID$(R$,4,1)
+819 REM move left
+820 IF MID$(R$,6,1)="L" THEN P=P-1
+829 REM move right
+830 IF MID$(R$,6,1)="R" THEN P=P+1
+840 S$=MID$(R$,5,1) : REM new state
+900 GOTO 400
+1000 REM String copy TM. Tape must start with XYXY..., halts at blank
+2000 DATA "0b-b..","0X-U1R","0Y-V3R"
+2010 DATA "1X-X1R","1Y-Y1R","1b-b2R"
+2020 DATA "2X-X2R","2Y-Y2R","2b-X5L"
+2030 DATA "3X-X3R","3Y-Y3R","3b-b4R"
+2040 DATA "4X-X4R","4Y-Y4R","4b-Y5L"
+2050 DATA "5X-X5L","5Y-Y5L","5b-b5L","5U-X0R","5V-Y0R"
+Ok
