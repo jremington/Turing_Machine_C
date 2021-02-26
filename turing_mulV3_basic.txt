@@ -1,4 +1,4 @@
-50 REM Turing Machine Simulator
+50 REM Turing Machine Simulator, multiplies integer string P by integer string Q
 200 T$="PbbQQQbbbbbbbbbbbbbbbbbbbb"
 210 S$="0"
 220 P=1 : REM starting pos
